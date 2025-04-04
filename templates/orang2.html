@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Karakter</title>
+</head>
+<body>
+    <h1>Daftar Karakter</h1>
+<ul>
+    {% if users %}
+        {% for list_orang in orang2 %}
+            <li>{{ list_orang }}</li>
+        {% endfor %}
+    {% else %}
+        <p>Tidak ada Karakter.</p>
+    {% endif %}
+</ul>

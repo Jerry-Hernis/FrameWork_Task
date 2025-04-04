@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Karakter</title>
+</head>
+<body>
+    <h1>Daftar Karakter</h1>
+<ul>
+    {% for user in miming %}
+        {% if user.role == "admin" %}
+            <li><strong>{{ user.name }} (Admin)</strong></li>
+        {% else %}
+            <li>{{ user.name }}</li>
+        {% endif %}
+    {% endfor %}
+</ul>

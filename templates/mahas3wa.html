@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Koruptor</title>
+</head>
+<body>
+    <h1>Liga Koruptor</h1>
+    <ul>
+        {% for who in mahas3wa %}
+            <li>
+                {{ who.nama }} - Nilai: {{ who.nilai }} - 
+                {% if who.nilai >= 90 %}
+                    Liga Dunia 🎓
+                {% elif who.nilai >= 75 %}
+                    Liga Benua 👍
+                {% elif who.nilai >= 60 %}
+                    Liga Provinsi 😊
+                {% else %}
+                    Liga Kabupaten 😢
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

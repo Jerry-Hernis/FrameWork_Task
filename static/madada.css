@@ -1,0 +1,16 @@
+body {
+    background-color: ivory;
+    color: brown;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: brown;
+}
+
+p {
+    text-align: center;
+    color: brown; 
+}
